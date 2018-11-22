@@ -1,3 +1,17 @@
 .icons{
+  display: flex;
+  align-items: center;
 
+  .icons_cart{
+    margin: 0 12px;
+  }
+  .icons_search{
+    position: relative;
+    margin-left: 12px;
+  }
+}
+
+.icons_img{
+  display: block;
+  cursor: pointer;
 }

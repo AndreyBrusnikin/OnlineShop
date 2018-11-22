@@ -5,3 +5,13 @@
   box-sizing: border-box;
   margin: 0 auto;
 }
+
+@mixin btn ($bg: $black,$fs:9px, $lh: 13px, $ls:0.54px, $br:40px,$w: 114px,$clr: $white){
+  width: $w;
+  background: $bg;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  border-radius: $br;
+  color: $clr;
+}
