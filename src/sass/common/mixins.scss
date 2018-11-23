@@ -13,5 +13,20 @@
   line-height: $lh;
   letter-spacing: $ls;
   border-radius: $br;
-  color: $clr;
+  padding: 13px 0;
+  margin: 25px 0;
+
+    a{
+    display: block;
+    text-align: center;
+    color: $clr;
+    text-transform: uppercase;
+    text-decoration: none;
+    @content;
+    }
+
+  &:hover {
+    background-color: lighten($bg, 25%);
+  }
+
 }
