@@ -567,6 +567,26 @@ p {
   }
 }
 
+.owl-nav .owl-prev .owl-next {
+  background: url("img/sprite-arrow.png") 0 0 no-repeat;
+  width: 49px;
+  height: 49px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.owl-nav .owl-next {
+  background-position: -49px;
+  left: auto;
+}
+
 
 .icons {
   display: -webkit-box;
