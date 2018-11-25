@@ -163,25 +163,41 @@
     }
   }
 }
+.owl-carousel {
+  .owl-nav {
 
-.owl-nav{
+    button.owl-prev, button.owl-next  {
+      background: url("img/sprite-arrow.png") 0 0 no-repeat;
+      width: 49px;
+      height: 49px;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
 
-  .owl-prev .owl-next{
-    background: url("img/sprite-arrow.png") 0 0 no-repeat;
-    width: 49px;
-    height: 49px;
-    border: none;
-    box-shadow: none;
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    cursor: pointer;
-    transform: translate(-50%);
+    button.owl-prev{
+      &:hover{
+        background-position: 0px -49px;
+      }
+    }
+
+    button.owl-next {
+      background-position: -49px 0px;
+      left: auto;
+      right: 10px;
+
+      &:hover{
+        background-position: -49px -49px;
+      }
+    }
   }
+}
 
-  .owl-next{
-    background-position: -49px;
-    left: auto;
-  }
+.owl-dots{
 
 }

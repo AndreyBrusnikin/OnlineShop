@@ -567,24 +567,35 @@ p {
   }
 }
 
-.owl-nav .owl-prev .owl-next {
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
   background: url("img/sprite-arrow.png") 0 0 no-repeat;
   width: 49px;
   height: 49px;
   border: none;
+  outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   position: absolute;
-  left: 5px;
+  left: 10px;
   top: 50%;
   cursor: pointer;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.owl-nav .owl-next {
-  background-position: -49px;
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-position: 0px -49px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  background-position: -49px 0px;
   left: auto;
+  right: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-position: -49px -49px;
 }
 
 
