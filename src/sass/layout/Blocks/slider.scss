@@ -61,21 +61,14 @@
     flex-wrap: wrap;
     margin: 25px 0;
 
-    .slider-icon:hover~.btnbtn{
-      filter: invert(100%);
-    }
+
 
     img{
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-
-
-      &:hover {
-        filter: invert(100%);
-      }
-
+      filter: invert(100%);
     }
 
 
@@ -199,5 +192,24 @@
 }
 
 .owl-dots{
+  text-align: center;
+  margin: 0 0 15px 0;
 
+  button.owl-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: $white;
+    box-sizing: border-box;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  button.active{
+    background-color: $black;
+  }
 }
+
+
