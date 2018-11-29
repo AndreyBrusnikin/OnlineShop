@@ -1049,6 +1049,10 @@ p {
 }
 
 @media (max-width: 640px) {
+  .products {
+    margin: 100px 0;
+  }
+
   .products .products_block {
     -webkit-box-pack: center;
     -ms-flex-pack: center;

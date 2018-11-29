@@ -61,15 +61,18 @@
   }
 }
 
-@media (max-width: 640px) {
-.products {
 
-  .products_block{
-    justify-content: center;
+
+@media (max-width: 640px) {
+  .products {
+    margin: 100px 0;
+
+    .products_block {
+      justify-content: center;
+    }
+    .products_element {
+      flex-basis: 40%;
+      margin: 5px 1%;
+    }
   }
-  .products_element{
-    flex-basis: 40%;
-    margin: 5px 1%;
-  }
-}
 }
