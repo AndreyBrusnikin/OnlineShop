@@ -583,7 +583,6 @@ p {
 .owl-carousel .owl-nav button.owl-next {
   background-position: -49px 0px;
   left: auto;
-  right: 10px;
 }
 
 .owl-carousel .owl-nav button.owl-next:hover {
@@ -924,7 +923,7 @@ p {
 }
 
 .banner .banner_information .banner_btn:hover {
-  background-color: #bfbfbf;
+  background-color: #e6e6e6;
 }
 
 .banner .banner_information .baneer_title p {
@@ -997,8 +996,6 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: 40px 0;
 }
 
@@ -1046,13 +1043,19 @@ p {
   .products {
     margin: 25px 0;
   }
-}
 
-@media (max-width: 640px) {
-  .products {
-    margin: 100px 0;
+  .products .products_block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
+  .products .products_element {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1150px) {
   .products .products_block {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1064,5 +1067,157 @@ p {
     flex-basis: 40%;
     margin: 5px 1%;
   }
+}
+
+@media (max-width: 680px) {
+  .products .products_block {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .products .products_element {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    margin: 5px 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products .products_element {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+}
+
+.featured {
+  margin: 90px 0;
+}
+
+.featured .featured_title p {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 2.8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2d2b27;
+  text-align: center;
+}
+
+.featured .featured_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.featured .featured_element {
+  -ms-flex-preferred-size: 23%;
+  flex-basis: 23%;
+}
+
+.featured .featured_element .featured_brand p {
+  color: #898989;
+}
+
+.featured .featured_element img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.featured .featured_element p {
+  font-size: 15px;
+  line-height: 17px;
+  margin: 7px 0;
+}
+
+.featured .featured_element p a {
+  font-size: 15px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.featured .featured_element p a:hover {
+  text-decoration: underline;
+}
+
+.featured .featured_element .featured_price p {
+  font-weight: 700;
+}
+
+.featured .featured_element .featured_price p span {
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.featured .featured_btn {
+  border: solid 2px #d9c8aa;
+  margin: 50px auto !important;
+  width: 175px;
+  background: transparent;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  border-radius: 60px;
+  padding: 13px 0;
+  margin: 25px 0;
+}
+
+.featured .featured_btn a {
+  display: block;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 3px 0;
+}
+
+.featured .featured_btn:hover {
+  background-color: rgba(64, 64, 64, 0);
+}
+
+.featured .featured_btn:hover {
+  background-color: #d9d9d9;
+}
+
+.featured .owl-carousel .owl-nav button.owl-prev,
+.featured .owl-carousel .owl-nav button.owl-next {
+  background: url("img/sprite-arrow2.png") 0 0 no-repeat;
+  width: 49px;
+  height: 49px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: absolute;
+  left: -55px;
+  top: 42%;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.featured .owl-carousel .owl-nav button.owl-prev:hover {
+  background-position: 0px -49px;
+  left: -55px;
+}
+
+.featured .owl-carousel .owl-nav button.owl-next {
+  background-position: -49px 0px;
+  left: auto;
+  right: -55px;
+}
+
+.featured .owl-carousel .owl-nav button.owl-next:hover {
+  background-position: -49px -49px;
 }
 
