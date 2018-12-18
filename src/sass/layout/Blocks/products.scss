@@ -1,88 +1,86 @@
 .products{
   margin: 90px 0;
+}
 
-  .products-title{
-    p{
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing: 2.8px;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: $gray-dark;
-      text-align: center;
+.products_btn{
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+
+    $values:(fs: 13px,lh: 20px,ls: 0.70px,w: 175px,br: 60px);
+    @include btn($values...);
+}
+
+.products_element{
+    flex-basis: 31,5%;
+    position: relative;
+
+
+    img{
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+
     }
-  }
-  .product_info{
-    p{
-      text-align: center;
-      margin: 20px 0;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 5.6px;
-    }
-  }
+}
 
-  .products_block{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-
-    .products_element{
-      flex-basis: 31,5%;
-      position: relative;
-
-
-      img{
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-
-      }
-    }
-
-    .products_btn{
-
-      position: absolute;
-      left: 50%;
-      top: 75%;
-      transform: translateX(-50%);
-
-      $values:(fs: 13px,lh: 20px,ls: 0.70px,w: 175px,br: 60px);
-      @include btn($values...);
-    }
-  }
+.products_block {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
 
 }
+
+.product_info{
+  p{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 5.6px;
+  }
+}
+
+.products-title{
+  p{
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 2.8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $gray-dark;
+    text-align: center;
+  }
+}
+
 
 @media (max-width: 768px) {
 
   .products {
     margin: 25px 0;
+  }
+  .products_block {
+    justify-content: center;
 
-    .products_block {
-      justify-content: center;
-
-    }
-    .products_element {
-      margin: 5px 0;
-    }
+  }
+  .products_element {
+    margin: 5px 0;
   }
 }
 
 @media (max-width: 1150px) {
-  .products {
-    .products_block {
+  .products_block {
       justify-content: center;
-    }
-    .products_element {
+  }
+  .products_element {
       flex-basis: 40%;
       margin: 5px 1%;
-    }
   }
 }
 
 @media (max-width: 680px) {
-  .products {
     .products_block {
       flex-wrap: wrap;
       justify-content: center;
@@ -91,15 +89,11 @@
       flex-basis: 40%;
       margin: 5px 1%;
     }
-  }
 }
 
-
 @media (max-width: 480px) {
-  .products {
     .products_element {
       flex-basis: 100%;
       margin: 10px 0;
     }
-  }
 }

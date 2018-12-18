@@ -3,8 +3,7 @@
 @import "common/reset";
 @import "common/mixins";
 
-@import "layout/header";
-@import "layout/footer";
+@import "layout/Blocks/footer";
 @import "layout/main";
 @import "layout/Blocks/top";
 @import "layout/Blocks/menu";
@@ -18,3 +17,4 @@
 @import "layout/Blocks/featured";
 @import "layout/Blocks/banner2";
 @import "layout/Blocks/news";
+@import "layout/Blocks/links";

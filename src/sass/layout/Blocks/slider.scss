@@ -1,19 +1,20 @@
-.slider{
+.slider {
   background: linear-gradient(90deg, #cdced2, #c5c6ca);
+}
 
-  .slider-item{
+.slider-item{
     display: flex;
     align-items: center;
     padding: 0 60px;
     box-sizing: border-box;
-  }
+}
 
-  .slider-img{
+.slider-img{
     flex-basis: 50%;
     align-self: flex-end;
-  }
+}
 
-  .slider-info{
+.slider-info{
     flex-basis: 50%;
     padding-left: 70px;
     box-sizing: border-box;
@@ -26,7 +27,6 @@
     }
 
 
-  }
 
   .slider-tittle{
 
@@ -94,19 +94,14 @@
 
 
 @media (max-width: 1300px)  {
-  .slider {
-
-    .slider-info {
-
-      .slider-tittle {
-        h1 {
-          font-size: 70px;
-          line-height: 80px;
-        }
-      }
-
+.slider-info {
+  .slider-tittle {
+    h1 {
+      font-size: 70px;
+      line-height: 80px;
     }
   }
+}
 }
 @media (max-width: 880px) {
       .slider {
@@ -121,39 +116,32 @@
     }
 }
 @media (max-width: 768px) {
-  .slider{
-
-    .slider-info{
-      .slider-tittle{
-        h1{
-          font-size: 40px;
-          line-height: 50px;
-          letter-spacing: 1px;
-        }
-        p{
-          margin: 15px 0;
-        }
-      }
+.slider-info {
+  .slider-tittle {
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 1px;
+    }
+    p {
+      margin: 15px 0;
     }
   }
 }
+}
 
 @media (max-width: 480px) {
-  .slider{
 
-    .slider-item{
+  .slider-item{
     padding: 15px;
-    }
+  }
 
-    .slider-info{
-      .slider-tittle{
+  .slider-tittle{
         h1{
           line-height: 30px;
           font-size: 40px;
 
         }
-      }
-    }
   }
 }
 .owl-carousel {
